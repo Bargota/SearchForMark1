@@ -144,7 +144,7 @@ if len(good)>MIN_MATCH_COUNT:
     img2 = cv2.polylines(img2,[np.int32(dst)],True,0,3, cv2.LINE_AA)
     ShowImage(img2)
 else:
-    print "Not enough matches are found - %d/%d" % (len(good),MIN_MATCH_COUNT)
+    print( "Not enough matches are found - %d/%d" % (len(good),MIN_MATCH_COUNT))
     matchesMask = None
 
 
